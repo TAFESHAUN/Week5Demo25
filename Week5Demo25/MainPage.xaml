@@ -16,16 +16,14 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackLayout>
-            <!--Header Contnet HERE-->
-            <CustomZooContent:Header Grid.Row="0"/>
-            
-            <!--Body Contnet HERE-->
-            <CustomZooContent:Body Grid.Row="1" Grid.Column="1"/>
+        <!--Header Contnet HERE-->
+        <CustomZooContent:Header Grid.Row="0"/>
 
-            <!--Footer Contnet HERE-->
-            <CustomZooContent:Footer Grid.Row="2" />
-        </StackLayout>
+        <!--Body Contnet HERE-->
+        <CustomZooContent:Body Grid.Row="1" Grid.ColumnSpan="2"/>
+
+        <!--Footer Contnet HERE-->
+        <CustomZooContent:Footer Grid.Row="2" />
     </Grid>
 
 </ContentPage>
