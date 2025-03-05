@@ -3,15 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Week5Demo25.MainPage"
              xmlns:CustomZooControls="clr-namespace:Week5Demo25.Controls"
+             xmlns:CustomZooContent="clr-namespace:Week5Demo25.Content"
              >
 
     <Grid>
         <StackLayout>
             <!--Header Contnet HERE-->
+            <CustomZooContent:Header />
+            
+            <!--Body Contnet HERE-->
             <CustomZooControls:OutbackAdventureForm 
             x:Name="AdventureForm" 
             OnFormSubmit="OnFormSubmit" />
+            
             <!--Footer Contnet HERE-->
+            <CustomZooContent:Footer />
         </StackLayout>
     </Grid>
 
