@@ -7,17 +7,24 @@
              >
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <StackLayout>
             <!--Header Contnet HERE-->
-            <CustomZooContent:Header />
+            <CustomZooContent:Header Grid.Row="0"/>
             
             <!--Body Contnet HERE-->
-            <CustomZooControls:OutbackAdventureForm 
-            x:Name="AdventureForm" 
-            OnFormSubmit="OnFormSubmit" />
-            
+            <CustomZooContent:Body Grid.Row="1" Grid.Column="1"/>
+
             <!--Footer Contnet HERE-->
-            <CustomZooContent:Footer />
+            <CustomZooContent:Footer Grid.Row="2" />
         </StackLayout>
     </Grid>
 
