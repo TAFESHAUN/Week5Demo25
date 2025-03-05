@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week5Demo25.MainPage"
+             xmlns:CustomZooControls="clr-namespace:Week5Demo25.Controls"
+             >
+
+    <Grid>
+        <StackLayout>
+            <!--Header Contnet HERE-->
+            <CustomZooControls:OutbackAdventureForm 
+            x:Name="AdventureForm" 
+            OnFormSubmit="OnFormSubmit" />
+            <!--Footer Contnet HERE-->
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

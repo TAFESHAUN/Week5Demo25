@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week5Demo25.Controls.OutbackAdventureForm">
+    <VerticalStackLayout>
+        <!-- Entry controls for Name, Email, and Number of Participants -->
+        <Entry Placeholder="Name" x:Name="NameEntry" />
+        <Entry Placeholder="Email" x:Name="EmailEntry" />
+        <Entry Placeholder="Number of Participants" x:Name="ParticipantsEntry" />
+
+        <!-- Submit button -->
+        <Button Text="Submit" Clicked="OnSubmitClicked" />
+
+    </VerticalStackLayout>
+
+</ContentView>
